@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    background-color: skyblue;
+}
+
+.menu ul {
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.menu ul li a{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+.menu ul li:first-child a{
+    border-left: 1px solid #fff;
+}
+.menu ul li:hover > a{
+    background-color: rgb(14, 134, 182);
+}
+
+/* DropDown Menu Design */
+
+.menu ul li{
+    position: relative;
+}
+.menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: skyblue;
+    
+}
+.menu ul li ul li{
+    display: block;
+    margin-left: 0;
+    border-top: 1px solid #fff;
+}
+.menu ul li ul li a{
+    border: none;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+.menu ul li ul li:first-child a{
+    border: none;
+}
+
+/* Hover Effect Dropdowan Menu */
+
+.menu ul li ul{
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
