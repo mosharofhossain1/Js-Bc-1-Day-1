@@ -25,3 +25,33 @@ console.log(noData);
 
 let undi = undefined;
 console.log(undi)
+
+
+// Non-primitive Data Types :
+
+// 1: Array 
+
+const personsNaem = ['Mosharof', 'Piash', 'Digonto', 'Ruman', 'Tanvir'];
+console.log(personsNaem);
+
+// 2: Object : 
+
+const countryInfo = {
+    name : 'Bangladesh',
+    district : 'Mymensing',
+    thana : 'Phulpur',
+    village : 'Bowla',
+    wordNo : 4
+}
+console.log(countryInfo);
+
+
+// 3: Function 
+
+function myName(){
+    console.log('My Name Is Mosharof Hossain');
+}
+
+myName();
+
+
