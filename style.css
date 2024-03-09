@@ -70,3 +70,33 @@
     transform: scaleY(1);
 }
 
+/* inner Menu */
+.menu ul li ul li{
+    position: relative;
+}
+.menu ul li ul li .inner_menu{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+   
+}
+.menu ul li ul li .inner_menu li{
+    margin-left: 20px;
+    
+}
+.menu ul li ul li .inner_menu li a{
+    border-left: 1px solid red;
+}
+
+
+/* inner Hove Effect */
+.menu ul li ul li .inner_menu{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu ul li ul li:hover .inner_menu{
+    visibility: visible;
+    opacity: 1;
+}
